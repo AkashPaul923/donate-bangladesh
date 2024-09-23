@@ -29,6 +29,9 @@ function moneyDonateNow(id1 ,id2, id3){
     `
     const showHistory = document.getElementById('history-show')
     showHistory.appendChild( div )
+    // show Modal
+    my_modal_1.showModal()
+    // input field empty
     document.getElementById(id1).value = ''
 }
 // utilities function
