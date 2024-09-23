@@ -24,6 +24,30 @@ function moneyDonateNow(id1 ,id2, id3){
     showHistory.appendChild( div )
     document.getElementById(id1).value = ''
 }
+// utilities function
+function focusedBtn(id){
+    document.getElementById(id).classList.add('bg-btnPrimary')
+    document.getElementById(id).classList.remove('text-gray-600')
+}
+function unfocusedBtn(id){
+    document.getElementById(id).classList.remove('bg-btnPrimary')
+    document.getElementById(id).classList.add('text-gray-600')
+}
 
+function hideElementById(id){
+    document.getElementById('donation-show').classList.add('hidden')
+    document.getElementById('history-show').classList.add('hidden')
+    document.getElementById( id ).classList.remove('hidden')
+}
 
 // button change
+document.getElementById('btn-history').addEventListener('click', function(){
+    focusedBtn('btn-history')
+    unfocusedBtn('btn-donation')
+    hideElementById('history-show')
+})
+document.getElementById('btn-donation').addEventListener('click', function(){
+    focusedBtn('btn-donation')
+    unfocusedBtn('btn-history')
+    hideElementById('donation-show')
+})
