@@ -18,6 +18,7 @@
               colors: {
                 clifford: '#da373d',
                 btnPrimary: '#B4F461',
+                bgSecondary: '#F9F7F3'
               }
             }
           }
@@ -29,7 +30,50 @@
         }
       </style>
 </head>
-<body class="">
-    <!-- nav section -->
+<body>
+    <header class="bg-bgSecondary">
+        <!-- nav section -->
+        <nav  >
+            <div class="max-w-[1200px] mx-auto py-9 flex items-center justify-between">
+                <button class="btn btn-lg bg-btnPrimary">Blog</button>
+                <div class="flex items-center justify-center gap-3">
+                    <img src="assets/logo.png" alt="">
+                    <h1 class="font-semibold text-xl">Donate Bangladesh</h1>
+                </div>
+                <div class="flex items-center justify-center gap-2">
+                    <img src="assets/coin.png" alt="">
+                    <p class="font-medium text-xl text-gray-600">5500</p>
+                    <p class="font-medium text-xl text-gray-600">BDT</p>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="max-w-[1140px] mx-auto">
+        <!-- btn section -->
+        <section>
+            <div class="flex justify-center items-center gap-4 mt-20 mb-8">
+                <button class="btn btn-lg bg-btnPrimary">Dotation</button>
+                <button class="btn btn-lg text-gray-600">History</button>
+            </div>
+        </section>
+        <!-- <section >
+            <div class="grid grid-cols-2 p-8 border rounded-2xl gap-8">
+                <div>
+                    <img src="assets/noakhali.png" alt="">
+                </div>
+                <div >
+                    <span class="bg-gray-100 p-3 rounded-xl flex">
+                        <span><img src="assets/coin.png" alt=""></span>
+                        <span class="font-medium text-base text-gray-600">5500</span>
+                        <span class="font-medium text-base text-gray-600">BDT</span>
+                    </span>
+                    <h2 class="font-bold text-xl my-4">Donate for Flood at Noakhali, Bangladesh</h2>
+                    <p class="font-light text-base text-gray-600"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+                    <input type="text" class="input input-bordered w-full my-6" placeholder="Write Donation Amount" name="" id="">
+                    <button class="btn btn-wide bg-btnPrimary w-full">Donate Now</button>
+                </div>
+            </div>
+        </section> -->
+    </main>
 </body>
 </html>
