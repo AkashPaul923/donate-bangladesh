@@ -4,6 +4,13 @@ function moneyDonateNow(id1 ,id2, id3){
     const inputBalance = parseFloat(document.getElementById(id1).value)
     const campBalance = parseFloat(document.getElementById(id2).innerText)
     const myBalance = parseFloat(document.getElementById('my-balance').innerText)
+    // input validation
+    if(inputBalance <= 0 || isNaN(inputBalance)){
+        return alert("Invalid Input")
+    }
+    if(myBalance < inputBalance){
+        return alert('Insufficient Balance')
+    }
 
     // update balance
     const newCampBalance = campBalance + inputBalance
