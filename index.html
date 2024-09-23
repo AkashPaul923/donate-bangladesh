@@ -42,7 +42,7 @@
                 </div>
                 <div class="flex items-center justify-center gap-2">
                     <img src="assets/coin.png" alt="">
-                    <p class="font-medium text-xl text-gray-600">5500</p>
+                    <p class="font-medium text-xl text-gray-600" id="my-balance">5500</p>
                     <p class="font-medium text-xl text-gray-600">BDT</p>
                 </div>
             </div>
@@ -64,12 +64,12 @@
                 </div>
                 <div>
                     <span class="bg-gray-100 p-3 mt-8 rounded-xl font-medium text-lg text-gray-600">
-                        <img class="inline" src="assets/coin.png" alt=""> <span>2500</span> BDT
+                        <img class="inline" src="assets/coin.png" alt=""> <span id="noakhali-camp-balance">2500</span> BDT
                     </span>
                     <h2 class="font-bold text-xl my-4">Donate for Flood at Noakhali, Bangladesh</h2>
                     <p class="font-light text-base text-gray-600"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-                    <input type="text" class="input input-bordered w-full my-6" placeholder="Write Donation Amount" name="" id="">
-                    <button class="btn btn-lg bg-btnPrimary w-full text-xl font-bold">Donate Now</button>
+                    <input id="noakhali-flood-input" type="text" class="input input-bordered w-full my-6" placeholder="Write Donation Amount" name="" id="">
+                    <button onclick="moneyDonateNow('noakhali-flood-input', 'noakhali-camp-balance')" class="btn btn-lg bg-btnPrimary w-full text-xl font-bold">Donate Now</button>
                 </div>
             </div>
             <!-- Feni Flood -->
@@ -79,12 +79,12 @@
                 </div>
                 <div>
                     <span class="bg-gray-100 p-3 mt-8 rounded-xl font-medium text-lg text-gray-600">
-                        <img class="inline" src="assets/coin.png" alt=""> <span>2461</span> BDT
+                        <img class="inline" src="assets/coin.png" alt=""> <span id="feni-camp-balance">2461</span> BDT
                     </span>
                     <h2 class="font-bold text-xl my-4">Donate for Flood at Noakhali, Bangladesh</h2>
                     <p class="font-light text-base text-gray-600"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-                    <input type="text" class="input input-bordered w-full my-6" placeholder="Write Donation Amount" name="" id="">
-                    <button class="btn btn-lg bg-btnPrimary w-full text-xl font-bold">Donate Now</button>
+                    <input id="feni-flood-input" type="text" class="input input-bordered w-full my-6" placeholder="Write Donation Amount" name="" id="">
+                    <button onclick="moneyDonateNow('feni-flood-input','feni-camp-balance')" class="btn btn-lg bg-btnPrimary w-full text-xl font-bold">Donate Now</button>
                 </div>
             </div>
             <!-- Quata movement -->
@@ -94,12 +94,12 @@
                 </div>
                 <div>
                     <span class="bg-gray-100 p-3 mt-8 rounded-xl font-medium text-lg text-gray-600">
-                        <img class="inline" src="assets/coin.png" alt=""> <span>500</span> BDT
+                        <img class="inline" src="assets/coin.png" alt=""> <span id="quata-camp-balance">500</span> BDT
                     </span>
                     <h2 class="font-bold text-xl my-4">Aid for Injured in the Quota Movement</h2>
                     <p class="font-light text-base text-gray-600"> The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
-                    <input type="text" class="input input-bordered w-full my-6" placeholder="Write Donation Amount" name="" id="">
-                    <button class="btn btn-lg bg-btnPrimary w-full text-xl font-bold">Donate Now</button>
+                    <input id="quata-movment-input" type="text" class="input input-bordered w-full my-6" placeholder="Write Donation Amount" name="" id="">
+                    <button onclick="moneyDonateNow('quata-movment-input', 'quata-camp-balance')" class="btn btn-lg bg-btnPrimary w-full text-xl font-bold">Donate Now</button>
                 </div>
             </div>
             
@@ -109,5 +109,8 @@
     <footer class="bg-bgSecondary min-h-28">
 
     </footer>
+
+
+    <script src="js/index.js"></script>
 </body>
 </html>
