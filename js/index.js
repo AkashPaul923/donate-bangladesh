@@ -66,6 +66,6 @@ document.getElementById('btn-donation').addEventListener('click', function(){
 
 // blog btn clicked
 document.getElementById('blog-btn').addEventListener('click', function(){
-    window.location.href = '../blog.html'
+    window.location.href = './blog.html'
 })
 
