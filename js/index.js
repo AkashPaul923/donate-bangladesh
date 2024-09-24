@@ -6,7 +6,7 @@ function moneyDonateNow(id1 ,id2, id3){
     const myBalance = parseFloat(document.getElementById('my-balance').innerText)
     // input validation
     if(inputBalance <= 0 || isNaN(inputBalance)){
-        return alert("Invalid Input")
+        return alert("Invalid donation amount")
     }
     if(myBalance < inputBalance){
         return alert('Insufficient Balance')
@@ -60,4 +60,11 @@ document.getElementById('btn-donation').addEventListener('click', function(){
     focusedBtn('btn-donation')
     unfocusedBtn('btn-history')
     hideElementById('donation-show')
+})
+
+
+
+// blog btn clicked
+document.getElementById('blog-btn').addEventListener('click', function(){
+    window.location.href = '/blog.html'
 })

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh / Blog</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/710f83004a.js" crossorigin="anonymous"></script>
+    <!-- tailwind and daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                btnPrimary: '#B4F461',
+                bgSecondary: '#F9F7F3'
+              }
+            }
+          }
+        }
+      </script>
+      <style>
+        body{
+            font-family: "Lexend", sans-serif;
+        }
+      </style>
+    
+</head>
+<body>
+    <header >
+        <div class="bg-bgSecondary h-28">
+
+        </div>
+        <!-- nav section -->
+        <nav  class="backdrop-blur-sm fixed top-0 w-full z-10">
+            <div class="max-w-[1200px] mx-auto pt-9 pb-3 flex flex-col md:flex-row items-center justify-between">
+                <button id="home-btn" class="btn btn-lg bg-btnPrimary">Home</button>
+                <div class="flex items-center justify-center gap-3">
+                    <img src="assets/logo.png" alt="">
+                    <h1 class="font-semibold text-xl">Donate Bangladesh</h1>
+                </div>
+                <div class="flex items-center justify-center gap-2">
+                    <img src="assets/coin.png" alt="">
+                    <p class="font-medium text-xl text-gray-600" id="my-balance">5500</p>
+                    <p class="font-medium text-xl text-gray-600">BDT</p>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="max-w-[1140px] mx-auto mb-20 mt-32 min-h-[600px] space-y-6" >
+        <h1 class="font-bold text-4xl mb-8">Important FAQ <i class="fa-solid fa-clipboard-question fa-beat"></i></h1>
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+            <div class="collapse-content">
+                <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a document, such as an HTML or XML file, as a tree of objects. Each element, attribute, and piece of text in the document is represented as a node in this tree.</p>
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+            <div class="collapse-content">
+                <p>To select an element from the DOM in JavaScript, use: <br>
+
+                    1. document.getElementById('id') for a unique ID. <br>
+                    2. document.getElementsByClassName('className') for a class. <br>
+                    3. document.getElementsByTagName('tagName') for a tag. <br>
+                    4. document.querySelector('selector') for a CSS-style selector. <br>
+                    5. document.querySelectorAll('selector') for multiple elements matching a selector.</p>
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+            <div class="collapse-content">
+                <p>Event delegation is a technique in the DOM where a single event listener is added to a parent element instead of multiple listeners on individual child elements. When an event occurs, it bubbles up to the parent, allowing the listener to handle events for all child elements. <br>
+
+                Benefits: <br>
+                    1. Performance: Reduces memory usage by minimizing the number of event listeners. <br>
+                    2. Dynamic Elements: Automatically applies to new child elements added after the listener is set, simplifying management. <br>
+                    3. Cleaner Code: Makes code easier to read and maintain by centralizing event handling.
+                </p>
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+            <div class="collapse-content">
+                <p>
+                    You can manipulate an element's attributes and styles in the DOM using JavaScript as follows: <br>
+                    Attributes <br>
+                    1. Get an attribute: <br>
+                    const value = element.getAttribute('attributeName'); <br> <br>
+                    2. Set an attribute: <br>
+                    element.setAttribute('attributeName', 'newValue'); <br> <br>
+                    3. Remove an attribute: <br>
+                    element.removeAttribute('attributeName'); <br> <br>
+                    4. Change a style property: <br>
+                    element.style.propertyName = 'value'; // e.g., element.style.backgroundColor = 'red'; <br> <br>
+                    5. Add multiple styles: <br>
+                    Object.assign(element.style, {
+                        color: 'blue',
+                        fontSize: '20px'
+                      }); <br> <br>
+                    These methods allow for dynamic changes to both attributes and styles, enhancing user interaction.     
+                </p>
+            </div>
+        </div>
+
+    </main>
+    <footer class="bg-bgSecondary min-h-28">
+
+    </footer>
+
+
+    <script src="js/index.js"></script>
+    <script src="js/blog.js"></script>
+</body>
+</html>
